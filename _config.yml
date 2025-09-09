@@ -2,8 +2,9 @@ remote_theme: pages-themes/dinky@v0.2.0
 plugins:
   - jekyll-remote-theme
 
-title: Sweet-Twixie
-author: Sweet-Twixie
-description: My GitHub Pages site
+title: Yuliia Bykhovets portfolio
+author: Yuliia Bylkhoevts
+description: Personal Data Science portfolio 
 show_downloads: false
+
 
