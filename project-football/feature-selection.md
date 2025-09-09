@@ -74,7 +74,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y_encoded, test_size=0.2,
 rf_model = RandomForestClassifier(n_estimators=100, random_state=42)
 rf_model.fit(X_train, y_train)
 rf_feature_importance = pd.Series(rf_model.feature_importances_, index=X_train.columns)
-rf_selected_features = rf_feature_importance.sort_values(ascending=False).head(10)  # Top 10 features
+rf_selected_features = rf_feature_importance.sort_values(ascending=False).head(10)
 
 # 2. Recursive Feature Elimination (RFE)
 rfe_model = RFE(estimator=RandomForestClassifier(n_estimators=100, random_state=42), n_features_to_select=10)
