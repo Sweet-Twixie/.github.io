@@ -1,8 +1,9 @@
-remote_theme: pages-themes/dinky@v0.2.0
+remote_theme: artemsheludko/flexible-jekyll
 plugins:
   - jekyll-remote-theme
 
-title: Sweet-Twixie
-description: Welcome to my GitHub Pages site!
-show_downloads: false
+title: Sweet-Twixie’s Site
+description: My site with Flexible-Jekyll theme
+show_downloads: false  # optional, remove if unsupported
+
 
