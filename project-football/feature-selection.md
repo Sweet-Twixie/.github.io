@@ -56,7 +56,7 @@ Gradient Boosting Selected Features: [list gb_selected_features here]
 
 Below is the Python code used to select features for the main player categories:
 
-```python
+```
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.feature_selection import RFE
 from sklearn.model_selection import train_test_split
@@ -90,3 +90,5 @@ gb_selected_features = gb_feature_importance.sort_values(ascending=False).head(1
 print("Random Forest Selected Features:\n", rf_selected_features)
 print("RFE Selected Features:\n", rfe_selected_features)
 print("Gradient Boosting Selected Features:\n", gb_selected_features)
+
+```
