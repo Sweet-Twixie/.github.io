@@ -47,7 +47,7 @@ We applied three complementary approaches to determine which features were most 
    - Selected the top 10 features by importance score.  
 
 **Selected features from each method:**
-```text
+
 Random Forest Selected Features: [list rf_selected_features here]
 RFE Selected Features: [list rfe_selected_features here]
 Gradient Boosting Selected Features: [list gb_selected_features here]
@@ -92,3 +92,4 @@ print("RFE Selected Features:\n", rfe_selected_features)
 print("Gradient Boosting Selected Features:\n", gb_selected_features)
 
 ```
+
