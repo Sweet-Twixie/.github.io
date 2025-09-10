@@ -19,10 +19,10 @@ Built to help **clubs, scouts, and analysts** identify versatile players, optimi
 - Evaluated using **F1-score (micro/macro)** & **Hamming loss**
 
 ## 🔍 Explore Sections
-- [Data Visualization](data-visualization.html) – insights and trends from the dataset
-- [Feature Engineering](feature-engineering.html) – skill transformations and encoding
+- [EDA and Feature Engineering](feature-engineering.html) – skill transformations and encoding
 - [Feature Selection](feature-selection.html) – methods and chosen features
 - [ML Classification & Ensemble](ml-classification.html) – models, hierarchical classifier, and results
 
 ## 🔗 Repository
 [View the code on GitHub](https://github.com/Sweet-Twixie/football-classification)
+
