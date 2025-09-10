@@ -139,3 +139,4 @@ for player in range(len(X_no_GK_club_nation_cat_test)):
             max_prob_index = predicted_defender_positions[0].argmax()
             predicted_positions.append(defender_positions[max_prob_index])
 
+```
