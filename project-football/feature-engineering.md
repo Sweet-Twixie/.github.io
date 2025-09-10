@@ -70,16 +70,41 @@ Beyond positions, the dataset contained **40+ numerical attributes** describing 
 
 ---
 
-### Example: Before & After Transformation
+## 🔹 Numerical Feature Engineering Examples
 
-Here’s an example of a feature transformation process:
+Below are examples of feature transformations. Each pair shows the **raw distribution (before)** and the **transformed distribution (after)**.
 
+---
+
+### ⚽ Attacking
 <div style="display: flex; justify-content: space-between;">
-  <img src="images/distribution_before.png" alt="Before Transformation" width="48%">
-  <img src="images/distribution_after.png" alt="After Transformation" width="48%">
+  <img src="assets/images/Before Attacking.png" alt="Before Attacking" width="48%">
+  <img src="assets/images/After Attacking.png" alt="After Attacking" width="48%">
 </div>
 
-*Left: raw feature distribution | Right: after Box-Cox transformation*
+---
+
+### ⚽ Dribbling
+<div style="display: flex; justify-content: space-between;">
+  <img src="assets/images/Before Dribbling.png" alt="Before Dribbling" width="48%">
+  <img src="assets/images/After Dribbling.png" alt="After Dribbling" width="48%">
+</div>
+
+---
+
+### ⚽ Wage
+<div style="display: flex; justify-content: space-between;">
+  <img src="assets/images/Before wage.png" alt="Before Wage" width="48%">
+  <img src="assets/images/After wage.png" alt="After Wage" width="48%">
+</div>
+
+---
+
+### ⚽ Defending
+<div style="display: flex; justify-content: space-between;">
+  <img src="assets/images/before defender.png" alt="Before Defending" width="48%">
+  <img src="assets/images/after defender.png" alt="After Defending" width="48%">
+</div>
 
 ---
 
@@ -90,4 +115,5 @@ After feature engineering, the dataset was clean, structured, and model-ready:
 - **Goalkeepers** were excluded from outfield classification, ensuring focus on the three main roles: **Defender, Midfielder, Forwarder**.  
 
 This solid foundation allowed for meaningful **feature selection** and accurate **multi-label classification** in the later modeling stages.
+
 
