@@ -46,11 +46,40 @@ However, since very few players had value `2`, I ultimately kept **left/right ro
 ---
 
 ## 🔹 Numerical Feature Engineering
-Beyond positions, the dataset contained **40+ numerical attributes** describing skills (e.g., dribbling, crossing, stamina, vision). To make these features comparable and more predictive:
+Beyond positions, the dataset contained **40+ numerical attributes** describing player skills (e.g., dribbling, crossing, stamina, vision). These raw values required careful preprocessing to ensure they were both interpretable and suitable for machine learning models.
 
-- **Standardization** → scaled attributes to have mean=0 and variance=1.  
-- **Binning** → grouped continuous values (e.g., pace ratings) into categorical bins to reduce noise.  
-- **Box-Cox transformation** → applied to skewed attributes to make their distributions more Gaussian, improving model performance.  
+### Step 1: Distribution Analysis
+- Plotted **distributions for each feature** to understand shape, skewness, and outliers.  
+- Identified features with strong skew (e.g., power attributes), and others with **multi-modal distributions** (e.g., defending skills had two peaks → possibly reflecting defenders vs. non-defenders).  
+
+### Step 2: Transformations
+- For skewed distributions, applied different transformations:
+  - **Logarithmic**
+  - **Exponential**
+  - **Power**
+  - **Box-Cox**  
+- Chose the most appropriate transformation **visually**, by comparing before/after plots.
+
+### Step 3: Normalization & Standardization
+- Applied **standardization** (mean=0, variance=1) to features for comparability.  
+- Applied **normalization** where necessary to scale attributes into a consistent range.  
+
+### Step 4: Feature Categorization
+- Some distributions suggested **natural groups** (e.g., defending had “two bumps”).  
+- Created **binned categories** for features like `attacking_crossing` to simplify interpretation.  
+
+---
+
+### Example: Before & After Transformation
+
+Here’s an example of a feature transformation process:
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="images/distribution_before.png" alt="Before Transformation" width="48%">
+  <img src="images/distribution_after.png" alt="After Transformation" width="48%">
+</div>
+
+*Left: raw feature distribution | Right: after Box-Cox transformation*
 
 ---
 
@@ -61,3 +90,4 @@ After feature engineering, the dataset was clean, structured, and model-ready:
 - **Goalkeepers** were excluded from outfield classification, ensuring focus on the three main roles: **Defender, Midfielder, Forwarder**.  
 
 This solid foundation allowed for meaningful **feature selection** and accurate **multi-label classification** in the later modeling stages.
+
