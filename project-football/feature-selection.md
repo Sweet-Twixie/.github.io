@@ -52,6 +52,27 @@ Random Forest Selected Features: [list rf_selected_features here]
 RFE Selected Features: [list rfe_selected_features here]
 Gradient Boosting Selected Features: [list gb_selected_features here]
 
+---
+
+## 🔹 Final Selected Features
+
+After comparing the outputs of **Random Forest**, **RFE**, and **Gradient Boosting**, and cross-checking with correlation analysis, I finalized a set of **10 key features** that consistently showed strong predictive power across methods:
+
+- `attacking_heading_accuracy_standardized`  
+- `attacking_short_passing_standardized`  
+- `skill_long_passing_standardized`  
+- `power_strength_standardized`  
+- `defending_average`  
+- `defending_category_encoded`  
+- `shooting_standardize`  
+- `mentality_interceptions_categories_encoded`  
+- `dribbling_standardize`  
+- `mentality_positioning_categories_encoded`  
+
+✅ These features represent a **balanced mix of attacking, defending, physical, and mentality attributes**, making them highly informative for distinguishing between **Defenders, Midfielders, and Forwarders**.  
+
+---
+
 ## 🔹 Feature Selection Code Example
 
 Below is the Python code used to select features for the main player categories:
@@ -92,4 +113,5 @@ print("RFE Selected Features:\n", rfe_selected_features)
 print("Gradient Boosting Selected Features:\n", gb_selected_features)
 
 ```
+
 
