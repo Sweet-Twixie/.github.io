@@ -9,7 +9,7 @@ Predicting which positions a football player can play—using data-driven insigh
 
 Built to help **clubs, scouts, and analysts** identify versatile players, optimize squads, and make smarter recruitment and development decisions.
 
-## 🚀 Highlights
+## Highlights
 - **Python & scikit-learn** for modeling
 - **Hierarchical multi-label classification**:
   - Broad roles: Goalkeeper, Defender, Midfielder, Forward
@@ -18,11 +18,12 @@ Built to help **clubs, scouts, and analysts** identify versatile players, optimi
 - Tested with **Logistic Regression, Random Forest, Neural Networks**
 - Evaluated using **F1-score (micro/macro)** & **Hamming loss**
 
-## 🔍 Explore Sections
+## Explore Sections
 - [EDA and Feature Engineering](feature-engineering.html) – skill transformations and encoding
 - [Feature Selection](feature-selection.html) – methods and chosen features
 - [ML Classification & Ensemble](ml-classification.html) – models, hierarchical classifier, and results
 
-## 🔗 Repository
-[View the code on GitHub](https://github.com/Sweet-Twixie/football-classification)
+## Repository
+The full code and dataset processing are available here:
+[GitHub Repository](https://github.com/Sweet-Twixie/football.git)
 
